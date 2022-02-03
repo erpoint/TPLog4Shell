@@ -42,8 +42,7 @@ Pour se connecter a la BDD : `mysql -u root -p ipadress`
     ipadress se trouve dans le .env
 
 
-## Vous pourrez trouver des exemples d'attaques dans le fichier "attacker.java"
-
+## Vous pourrez trouver des exemples d'attaques dans le dossier "attacker"
 ### Question : 
     
     Le but est de se connecter sur le serveur de la victime en tant que administrateur. Utiliser le lookup vu en cours, afin d'appeler et d'exécuter la class (code malicieux). Pour écrire le contenu du fichier .env dans les logs, l'envoyer au loggeur du serveur afin de récupérer dans les logs du serveur. Grace à cette manipulation vous allez pouvoir récupérer l'identifiant et mot de passe de l'administrateur du serveur.
