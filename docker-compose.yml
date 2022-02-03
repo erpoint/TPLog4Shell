@@ -11,7 +11,7 @@ services:
     volumes:
       - "./attacker/class:/app/shared"
     links:
-      - logger:logger
+      - "logger:logger"
   logger:
     image: log4shell:logger
     volumes:
