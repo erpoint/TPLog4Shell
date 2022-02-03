@@ -1,0 +1,15 @@
+.
+..
+.env
+.gitignore
+.idea
+HELP.md
+dockerfile
+log4jTP.iml
+mvnw
+mvnw.cmd
+pom.xml
+src
+target
+
+
