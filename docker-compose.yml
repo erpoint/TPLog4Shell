@@ -1,7 +1,7 @@
 services:
   mariadb:
     image: mariadb
-    environment:
+    environments:
       - "MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=totolabricot"
       - "MYSQL_USER=user"
       - "MYSQL_PASSWORD=totolabricot"
