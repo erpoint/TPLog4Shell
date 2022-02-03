@@ -23,14 +23,8 @@ Dans la console de la VM root@debian-1, créer un répertoire "log4shell"
 Faire `cd log4shell` et ensuite `git clone https://github.com/Fabinhio25/TPLog4Shell`
 
 
-Dans un premier temps, récupérer sur github le dépot du TP
-    <lien github>
+Après avoir importé le repertoire, faire `docker-compose up` dans le repertoire cloné.
 
-Après avoir importé le repertoire, faire `docker-compose up` dans le repertoire clonné.
-
-
-Etapes d'initialisation & démarrage du serveur :
-Docker-compose up
 Et peut-etre faire un `make build` pour créer tous les DockerFiles
 
 Etapes d'initialisation & démarrage du client : 
