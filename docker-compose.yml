@@ -7,22 +7,22 @@ services:
       - "MYSQL_PASSWORD=totolabricot"
       - "MYSQL_DATABASE=user"
   server:
-    image: log4shell:server
+    image: "log4shell:server"
     volumes:
       - "./attacker/class:/app/shared"
     links:
       - "logger:logger"
   logger:
-    image: log4shell:logger
+    image: "log4shell:logger"
     volumes:
       - "./attacker/logs:/app/logs"
   build:
-    image: log4shell:builder
+    image: "log4shell:builder"
     volumes:
       - "./attacker/java:/app/java"
       - "./attacker/class:/app/class"
   victim:
-    image: log4shell:victim
+    image: "log4shell:victim"
     links:
       - "server:server"
       - "mariadb:mariadb"
