@@ -2,7 +2,7 @@ version: "3.3"
 services:
   mariadb:
     image: mariadb
-    environments:
+    environment:
       - "MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=totolabricot"
       - "MYSQL_USER=user"
       - "MYSQL_PASSWORD=totolabricot"
