@@ -34,7 +34,7 @@ Appeler votre class java dans une requete faite au serveur, grace à un lookup v
 
 
 ### Question : 
-    Fichier .env : Récupérer le fichier **.env** présent sur le serveur de la victime par le biais de la console
+    Fichier .env : Récupérer le fichier .env présent sur le serveur de la victime par le biais de la console
 
     BDD : Créer un utilisateur avec les informations présentes dans le fichier .env pour avoir accès au contenu de la BDD. 
 
