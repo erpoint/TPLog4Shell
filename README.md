@@ -16,7 +16,7 @@ Il faut savoir que le développeur du serveur victime a choisi de logger les ide
 
 ## Configuration
 
-Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'iut comme vous en avez l'habitude pour les  autres TP précédents
+Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'IUT
 
 Si vous utilisez les machines de l'iut, lancer `vdn docker-tmp`.
 Start la machine root@debian-1
