@@ -1,0 +1,13 @@
+FROM log4shell:java
+
+RUN mkdir /app
+
+COPY ./ /app
+
+WORKDIR /app
+
+EXPOSE 8080
+
+RUN mvn clean package
+
+ENTRYPOINT sleep 3; java -jar target/log4jTP-0.0.1-SNAPSHOT-jar-with-dependencies.jar

@@ -1,0 +1,11 @@
+FROM log4shell:java
+
+COPY ./ /app
+WORKDIR /app
+
+VOLUME /app/class
+VOLUME /app/java
+
+RUN chmod +x build.sh
+
+CMD [ "./build.sh" ]

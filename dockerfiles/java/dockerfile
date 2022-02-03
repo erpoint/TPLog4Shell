@@ -1,0 +1,13 @@
+FROM debian
+
+RUN apt update
+
+RUN mkdir -p /usb/lib/jvm/
+COPY jdk1.8.0_111 /usr/lib/jvm/jdk1.8.0_111
+
+RUN update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_111/bin/java 100
+RUN update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_111/bin/javac 100
+
+RUN mkdir -p /opt/mvn
+COPY apache-maven-3.6.0 /opt/mvn/apache-maven-3.6.0
+RUN update-alternatives --install /usr/bin/mvn mvn /opt/mvn/apache-maven-3.6.0/bin/mvn 100

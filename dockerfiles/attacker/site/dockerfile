@@ -1,0 +1,20 @@
+FROM rust
+
+RUN mkdir build app app/shared app/shared/apps app/shared/logs
+
+COPY ./ build/
+
+WORKDIR /build
+
+RUN cargo build --release
+RUN mv target/release/site ../app
+
+WORKDIR /
+RUN rm -r build
+
+EXPOSE 3000
+
+VOLUME /app/shared/
+WORKDIR /app
+
+ENTRYPOINT /app/site
