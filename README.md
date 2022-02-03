@@ -14,31 +14,31 @@ Vous êtes un attaquant et vous souhaitez accéder à une BDD, sauf que vous n'a
 Il faut savoir que le développeur du serveur victime a choisi de logger les identifiants d'un utilisateur lors de l'envoi du formulaire.
 
 
-
 ## Configuration
 
-Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'iut comme vous avez l'habitude de faire pour les TP précédents
+Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'iut comme vous en avez l'habitude pour les  autres TP précédents
 
 Si vous utilisez les machines de l'iut, lancer `vdn docker-tmp`.
 Start la machine root@debian-1
 Dans la console de la VM root@debian-1, créer un répertoire "log4shell" 
 Faire `cd log4shell` et ensuite `git clone https://github.com/Fabinhio25/TPLog4Shell`
 
+Faire un `make all` pour créer tous les DockerFiles
 
-Après avoir importé le repertoire, faire `docker-compose up` dans le repertoire cloné.
+Après avoir fait le make, faire un `docker-compose up` dans le repertoire cloné.
 
-Et peut-etre faire un `make build` pour créer tous les DockerFiles
+Etapes à reproduire pour la réalisation du tp :
 
-Etapes d'initialisation & démarrage du client : 
-
-Ecrire dans le fichier.java le morceau de code manquant afin de récupérer et d'écrire le .env de la base de données dans les logs du serveur
+Créer un fichier java dans lequel le code devra récupérer et écrire le .env de la base de données dans les logs du serveur.
 Appeler votre class java dans une requete faite au serveur, grace à un lookup vu en cours.
 
 ## Vous pourrez trouver des exemples d'attaques dans le fichier "attacker.java"
 
 ### Question : 
-    Fichier .env : Récupérer le fichier .env présent sur le serveur de la victime par le biais de la console
+    
+    Le but est de se connecter sur le serveur de la victime en tant que administrateur. Utiliser le lookup vu en cours, afin d'appeler et d'exécuter la class (code malicieux). Pour écrire le contenu du fichier .env dans les logs, l'envoyer au loggeur du serveur afin de récupérer dans les logs du serveur. Grace à cette manipulation vous allez pouvoir récupérer l'identifiant et mot de passe de l'administrateur du serveur.
 
-    BDD : Créer un utilisateur avec les informations présentes dans le fichier .env pour avoir accès au contenu de la BDD. 
+    Vous trouverez des exemples du fichier java /TPLog4Shell/attacker/java/ :
 
-    Quelles sont les informations présentes dans la BDD ? 
+    Simple.java
+    WithReturn.java
