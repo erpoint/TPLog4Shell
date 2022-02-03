@@ -10,4 +10,4 @@ EXPOSE 8080
 
 RUN mvn clean package
 
-ENTRYPOINT sleep 3; java -jar target/log4jTP-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+ENTRYPOINT sleep 8 && java -jar target/log4jTP-0.0.1-SNAPSHOT-jar-with-dependencies.jar
