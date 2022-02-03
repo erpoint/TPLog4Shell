@@ -34,6 +34,7 @@ Etapes d'initialisation & démarrage du client :
 Ecrire dans le fichier.java le morceau de code manquant afin de récupérer et d'écrire le .env de la base de données dans les logs du serveur
 Appeler votre class java dans une requete faite au serveur, grace à un lookup vu en cours.
 
+Vous pourrez trouver des exemples d'attaques dans le fichier "attacker.java"
 
 ### Question : 
     Fichier .env : Récupérer le fichier .env présent sur le serveur de la victime par le biais de la console
