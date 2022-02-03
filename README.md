@@ -11,16 +11,16 @@
 **Schéma explicatif rapide :** 
 
 Vous êtes un attaquant et vous souhaitez accéder à une BDD, sauf que vous n'avez pas les informations pour vous connectez à la BDD. Ces informations se trouvent dans le fichier .env de la victime.
-Il faut savoir que le développeur du serveur victime a choisi de logger les identifiants d'un utilisateur lors de l'envoie du formulaire.
+Il faut savoir que le développeur du serveur victime a choisi de logger les identifiants d'un utilisateur lors de l'envoi du formulaire.
 
 
 
-Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'iut comme vous avez l'habitude de faire pour les TP précéndents
+Pour utiliser les commandes docker vous devrez vous connecter à VDN à l'iut comme vous avez l'habitude de faire pour les TP précédents
 
-Si vous utilisez les machines de l'iut, lancer vdn docker-tmp.
+Si vous utilisez les machines de l'iut, lancer `vdn docker-tmp`.
 Start la machine root@debian-1
 Dans la console de la VM root@debian-1, créer un répertoire "log4shell" 
-Faire `cd log4shell` et ensuite `git clone *lien github*`
+Faire `cd log4shell` et ensuite `git clone https://github.com/Fabinhio25/TPLog4Shell`
 
 
 Dans un premier temps, récupérer sur github le dépot du TP
