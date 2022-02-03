@@ -6,7 +6,6 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=totolabricot
       - MYSQL_DATABASE=user
-
   server:
     image: log4shell:server
     volumes:
@@ -18,13 +17,11 @@ services:
     image: log4shell:logger
     volumes:
       - ./attacker/logs:/app/logs
-
   build:
     image: log4shell:builder
     volumes:
       - ./attacker/java:/app/java
       - ./attacker/class:/app/class
-
   victim:
     image: log4shell:victim
     links:
