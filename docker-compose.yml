@@ -11,6 +11,13 @@ services:
     image: log4shell:server
     volumes:
       - ./attacker/class:/app/shared
+    links:
+      - logger:logger
+
+  logger:
+    image: log4shell:logger
+    volumes:
+      - ./attacker/logs:/app/logs
 
   build:
     image: log4shell:builder
@@ -23,10 +30,6 @@ services:
     links:
       - server:server
       - mariadb:mariadb
+      - logger:logger
     depends_on:
       - mariadb
-
-  logger:
-    image: log4shell:logger
-    volumes:
-      - ./attacker/logs:/app/logs

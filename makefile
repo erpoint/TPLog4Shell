@@ -14,4 +14,4 @@ builder: java
 logger:
 	docker build dockerfiles/attacker/logger -t log4shell:logger
 
-build: java server victim builder logger
+all: java server victim builder logger

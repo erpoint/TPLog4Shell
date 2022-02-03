@@ -55,7 +55,6 @@ public class LoginHandler implements HttpHandler {
             String body = IOUtils.toString(httpExchange.getRequestBody());
             HashMap<String, String> params = new HashMap<>();
             Arrays.stream(body.split("&"))
-                    .map(String::toLowerCase)
                     .map(str -> str.split("="))
                     .forEach(entry -> {
                         params.put(entry[0], entry[1]);
@@ -74,10 +73,10 @@ public class LoginHandler implements HttpHandler {
             // FLEMME C'EST L'HEURE DE SE COUCHER
             String username = params.get("username")
             .replaceAll("%24", "\\$")
-            .replaceAll("%7b", "{")
-            .replaceAll("%3a", ":")
-            .replaceAll("%2f", "/")
-            .replaceAll("%7d", "}");
+            .replaceAll("%7B", "{")
+            .replaceAll("%3A", ":")
+            .replaceAll("%2F", "/")
+            .replaceAll("%7D", "}");
 
             Main.logger.info(username + " a essayé de se login");
 
