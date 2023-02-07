@@ -5,7 +5,7 @@
 ## **Objectif** : Hasher les fichiers d'un serveur victime pour simuler une attaque ransomware avec la faille Log4Shell
 
 ### **Configuration** :
- Pour commencer, clonez le projet suivant (ou téléchargez l'archive): [tp_log4shell](??).  
+ Pour commencer, clonez le projet (ou téléchargez l'archive).  
 
  Dans ce projet, vous trouverez : 
 - Le serveur LDAP du pirate;
@@ -24,7 +24,6 @@ server_1 | Running on IP : XXX.XXX
 ```
  L'IP `server_1` sera à mettre dans le lookup plus tard.
 
- a tester
  Si vous ajoutez une classe dans le dossier attacker/java, pensez à relancer vos containers !
 
 ---
